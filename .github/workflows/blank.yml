@@ -27,7 +27,7 @@ jobs:
        - name: cloning repo
          continue-on-error: true
          run: |
-           git clone https://${GitHubName}:${{ secrets.GH_TOKEN1 }}@github.com/VideoCompress21.git
+           git clone ${{ secrets.REPO }}
        - name: Running VideoCompressor
          timeout-minutes: 300
          continue-on-error: true
