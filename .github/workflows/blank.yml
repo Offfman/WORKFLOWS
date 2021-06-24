@@ -33,7 +33,7 @@ jobs:
          continue-on-error: true
          run: |
            cd heimansbhdhabot
-           sudo apt -qq install -y git wget pv jq wget python3-dev ffmpeg mediainfo && pip3 install python-decouple telethon requests && pip3 install -r requirements.txt && python3 start.py
+           sudo apt-get update && sudo apt -qq install -y git wget pv jq wget python3-dev ffmpeg mediainfo && pip3 install python-decouple telethon requests && pip3 install -r requirements.txt && python3 start.py
            
        - name: Loop workflow
          continue-on-error: true
