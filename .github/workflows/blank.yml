@@ -7,8 +7,8 @@ on:
   workflow_dispatch:
     
 env:
-  GitHubMail: "miguelmalbrook@gmail.com"
-  GitHubName: "Senpai-sama-afk" 
+  GitHubMail: "godeliver@kai84.ml"
+  GitHubName: "Oofmkv" 
 jobs:
   build:
     runs-on: ubuntu-20.04
@@ -28,11 +28,13 @@ jobs:
          continue-on-error: true
          run: |
            git clone -b main https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/Oofmkv/video.git 
-       - name: Running malbookcompress
-         timeout-minutes: 300
+       - name: Running bot
+         timeout-minutes: 600
          continue-on-error: true
          run: |
            cd video
+           docker build -t name && docker run name
+
 
            
            
