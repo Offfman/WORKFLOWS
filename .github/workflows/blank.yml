@@ -27,7 +27,7 @@ jobs:
        - name: cloning repo
          continue-on-error: true
          run: |
-           git clone -b main https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/video.git 
+           git clone -b main https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/Oofmkv/video.git 
        - name: Running bot
          timeout-minutes: 600
          continue-on-error: true
